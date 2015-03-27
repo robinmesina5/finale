@@ -1,0 +1,65 @@
+<%= form_for(@relative) do |f| %>
+  <% if @relative.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@relative.errors.count, "error") %> prohibited this relative from being saved:</h2>
+
+      <ul>
+      <% @relative.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :tree_id %><br>
+    <%= f.number_field :tree_id %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :birthday %><br>
+    <%= f.text_field :birthday %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_death %><br>
+    <%= f.text_field :date_of_death %>
+  </div>
+  <div class="field">
+    <%= f.label :father %><br>
+    <%= f.text_field :father %>
+  </div>
+  <div class="field">
+    <%= f.label :mother %><br>
+    <%= f.text_field :mother %>
+  </div>
+  <div class="field">
+    <%= f.label :children %><br>
+    <%= f.text_field :children %>
+  </div>
+  <div class="field">
+    <%= f.label :occupation %><br>
+    <%= f.text_field :occupation %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

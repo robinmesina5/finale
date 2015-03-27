@@ -1,0 +1,19 @@
+  <h1>Sign up for Scrapbook</h1>
+
+  <%= form_for @user do |f| %>
+  <%= f.text_field :username, placeholder: "desired username" %>
+  <br/>
+  <%= f.text_field :first_name, placeholder: "first name" %>
+  <br/>
+  <%= f.text_field :last_name, placeholder: "last name" %>
+  <br/>
+  <%= f.text_field :email, placeholder: "email" %>
+  <br/>
+  <%= f.password_field :password, placeholder: "password" %>
+  <br/>
+  <%= f.password_field :password_confirmation, placeholder: "confirm password" %>
+  <br/>
+
+  <%= f.submit "Sign up" %>
+  <% end %>
+

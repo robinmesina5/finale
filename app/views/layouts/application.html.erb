@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finale</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	
+	<% if current_user %>
+	<h4>Welcome Back, <%= current_user.username %> </h4>
+	
+	<% end %>
+	<%= yield %>
+
+</body>
+</html>

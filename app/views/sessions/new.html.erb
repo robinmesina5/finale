@@ -1,0 +1,13 @@
+  <h1>Log in to Scrapbook</h1>
+
+  <%= form_for @user, as: :sessions, url: sessions_url do |f| %>
+  <%= f.text_field :username, placeholder: "username" %>
+  <br/>
+  <%= f.password_field :password, placeholder: "password" %>
+  <br/>
+
+  <%= f.submit "Log in" %>
+  <% end %>
+
+<h4>Not a current user? <%= link_to 'Sign up here', new_user_path %> </h4>
+

@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @relative.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @relative.last_name %>
+</p>
+
+<p>
+  <strong>Tree:</strong>
+  <%= @relative.tree_id %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @relative.address %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @relative.age %>
+</p>
+
+<p>
+  <strong>Birthday:</strong>
+  <%= @relative.birthday %>
+</p>
+
+<p>
+  <strong>Date of death:</strong>
+  <%= @relative.date_of_death %>
+</p>
+
+<p>
+  <strong>Father:</strong>
+  <%= @relative.father %>
+</p>
+
+<p>
+  <strong>Mother:</strong>
+  <%= @relative.mother %>
+</p>
+
+<p>
+  <strong>Children:</strong>
+  <%= @relative.children %>
+</p>
+
+<p>
+  <strong>Occupation:</strong>
+  <%= @relative.occupation %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @relative.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_relative_path(@relative) %> |
+<%= link_to 'Back', relatives_path %>

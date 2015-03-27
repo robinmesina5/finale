@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @family_tree.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @family_tree.user_id %>
+</p>
+
+<p>
+  <strong>Relative:</strong>
+  <%= @family_tree.relative_id %>
+</p>
+
+<%= link_to 'Edit', edit_family_tree_path(@family_tree) %> |
+<%= link_to 'Back', family_trees_path %>
