@@ -10,7 +10,7 @@
 	
 	<% if current_user %>
 	<h4>Welcome Back, <%= current_user.username %> </h4>
-	
+	<%= button_to "Log Out", sessions_url, method: "delete" %>
 	<% end %>
 	<%= yield %>
 

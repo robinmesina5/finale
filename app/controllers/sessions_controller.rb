@@ -12,9 +12,10 @@ class SessionsController < ApplicationController
     if @user && @user.authenticate(session_params[:password])
       login!(@user)
 
-      redirect_to family_trees_url  
+      # redirect_to family_trees_url
+      
     else
-      redirect_to new_session_url
+      redirect_to new_session_url 
     end
   end
 
